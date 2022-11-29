@@ -1,28 +1,33 @@
-*{
-    padding: 0%;
-    margin: 0px;
-    font-family: sans-serif
-}
-#estacionBarcos{
-    padding-left: 60%;
+#tablaContenedora{
+    display:flex;
+    width:750px;
+    height:35px;
 }
 
+#tablaContenedora tr{
+    display:flex;
+    width:750px;
+    height:35px;
+}
+#tablaContenedora th{
+    display:flex;
+    width:750px;
+    height:35px;
+}
 #submarino1{
+background-color: black;
+width: 40px;
+height: 40px;
+border-radius: 29px;
+position: absolute;
+}
+#submarino2{
     background-color: black;
     width: 40px;
     height: 40px;
     border-radius: 29px;
     position: absolute;
 }
-
-#submarino2{
-    background-color: black;
-    width: 40px;
-    height: 40px;
-    border-radius: 29px;
-   position: absolute;
-}
-
 #submarino3{
     background-color: black;
     width: 40px;
@@ -30,7 +35,6 @@
     border-radius: 29px;
     position: absolute;
 }
-
 #submarino4{
     background-color: black;
     width: 40px;
@@ -38,7 +42,6 @@
     border-radius: 29px;
     position: absolute;
 }
-
 #destructores1{
     background-color: black;
     width: 80px;
@@ -51,37 +54,13 @@
     background-color: black;
     width: 80px;
     height: 40px;
-    border-radius: 29px;
-   position: absolute;
+    border-radius: 29px; 
+    position: absolute;
 }
 
 #destructores3{
     background-color: black;
     width: 80px;
-    height: 40px;
-    border-radius: 29px;
-    position: absolute;
-}
-
-#cruceros1{
-    background-color: black;
-    width: 150px;
-    height: 40px;
-    border-radius: 29px;
-    position: absolute;
-}
-
-#cruceros2{
-    background-color: black;
-    width: 150px;
-    height: 40px;
-    border-radius: 29px;
-    position: absolute;
-}
-
-#portaAviones1{
-    background-color: black;
-    width: 200px;
     height: 40px;
     border-radius: 29px;
     position: absolute;
