@@ -19,22 +19,8 @@
 <body>
     <br>
     <div id="contenedorPadre">
-    <section id="cabezeraPuntos">   
-        <table border="1">
-            <tr>
-                <td>
-                    Barcos 0
-                </td>
-                <td>
-                    Vivos 0
-                </td>
-                <td>
-                    Destruidos 0
-                </td>
-            </tr>
-        </table>
-    </section>
-    <nav id="estacionBarcos">
+		<div id="contenedor1" ondragover="evdragover(event)" ondrop="evdrop(event)">
+			<nav id="estacionBarcos" ondragover="evdragover(event)" ondrop="evdrop(event)">
         <p>
             <strong>
                 Seleccione el barco que desee posicionar.
@@ -48,69 +34,212 @@
             </strong>
         </p>
         <br>
-        <span id="submarino1">
+        <span id="submarino1" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <span id="submarino2">
+        <span id="submarino2" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <span id="submarino3">
+        <span id="submarino3" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <span id="submarino4">
+        <span id="submarino4" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <br><br><br>
-        <hr>
+        <br><br>
         <p>
             <strong>
                 DESTRUCTORES
             </strong>
         </p>
         <br>
-        <span id="destructores1">
+        <span id="destructores1" draggable="true" ondragstart="evdragstart(event)">
            
         </span>
-        <span id="destructores2">
+        <span id="destructores2" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <span id="destructores3">
+        <span id="destructores3" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <br><br><br>
-        <hr>
+        <br><br>
         <p>
             <strong>
                 CRUCEROS
             </strong>
         </p>
         <br>
-        <span id="cruceros1">
+        <span id="cruceros1" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <span id="cruceros2">
+        <span id="cruceros2" draggable="true" ondragstart="evdragstart(event)">
 
         </span>
-        <br><br><br>
-        <hr>
+        <br><br>
         <p>
             <strong>
                 PORTA AVIONES
             </strong>
         </p>
         <br>
-        <span id="portaAviones1">
+        <span id="portaAviones1" draggable="true" ondragstart="evdragstart(event)"> 
 
         </span>
-        <br><br><br>
-        <hr>
+        <br><br>
     </nav>
-    <section id="player">
-        
-    </section>
-    <section id="espacioMaquina">
+		</div>
+		<p>
+			<strong>
+				ARRASTRAR LOS ELEMENTOS PARA MOVER DENTRO DE ALGUNA CASILLA
+			</strong>
+		</p>
+		<table border="2" id="tablaContenedora">
+			<tr>
+				<th></th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				<th>7</th>
+				<th>8</th>
+				<th>9</th>
+				<th>10</th>
+			</tr>
+			<tr>
+				<th>A</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a10"></th>
+			</tr>
+			<tr>
+				<th>B</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b10"></th>
+			</tr>
+			<tr>
+				<th>C</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c10"></th>
+			</tr>
+			<tr>
+				<th>D</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d10"></th>
+			</tr>
+			<tr>
+				<th>E</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e10"></th>
+			</tr>
+			<tr>
+				<th>F</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f10"></th>
+			</tr>
+			<tr>
+				<th>G</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g10"></th>
+			</tr>
+			<tr>
+				<th>H</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h10"></th>
+			</tr>
+			<tr>
+				<th>I</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i10"></th>
+			</tr>
+			<tr>
+				<th>J</th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j10"></th>
+			</tr>
+		</table>
+	</div>
 
-    </section>
-    </div>
+
 </body>
 </html>
