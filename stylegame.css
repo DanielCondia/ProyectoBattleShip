@@ -65,3 +65,27 @@ position: absolute;
     border-radius: 29px;
     position: absolute;
 }
+
+#cruceros1{
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 29px;
+    position: absolute;
+}
+
+#cruceros2{
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 29px;
+    position: absolute;
+}
+
+#portaAviones1{
+    background-color: black;
+    width: 130px;
+    height: 30px;
+    border-radius: 29px;
+    position: absolute;
+}
