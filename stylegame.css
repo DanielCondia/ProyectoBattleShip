@@ -2,18 +2,46 @@
     display:flex;
     width:580px;
     height:35px;
+    
 }
 
 #tablaContenedora tr{
     display:flex;
     width:580px;
     height:35px;
+    
 }
 #tablaContenedora th{
     display:flex;
     width:580px;
     height:35px;
+   
 }
+
+#tablaContenedeoraMachine{
+    margin-left: 50%;
+    display:flex;
+    width:580px;
+    height:35px;
+}
+
+#sectionMachine table{
+   margin-top: -6%;
+}
+
+#tablaContenedeoraMachine tr{
+    display:flex;
+    width:580px;
+    height:35px;
+}
+
+#tablaContenedeoraMachine th{
+    display:flex;
+    width:580px;
+    height:35px;
+}
+
+
 #submarino1{
 background-color: black;
 width: 50px;
