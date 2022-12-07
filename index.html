@@ -18,55 +18,57 @@
     <div id="contenedorPadre">
 		<div id="contenedor1" ondragover="evdragover(event)" ondrop="evdrop(event)">
 			<nav id="estacionBarcos" ondragover="evdragover(event)" ondrop="evdrop(event)">
-        <p>
-            <strong>
-                Seleccione el barco que desee posicionar.
-            </strong>
-        </p>
-        <hr>
-        <br>
+			<p>
+				<strong>
+					Seleccione el barco que desee posicionar.
+				</strong>
+			</p>
+			<hr>
+			<br>
         
-        <br>
-        <span id="submarino1" draggable="true" ondragstart="evdragstart(event)">
+			<br>
+			<span id="submarino1"  ondragstart="evdragstart(event)">
 
-        </span>
-        <span id="submarino2" draggable="true" ondragstart="evdragstart(event)">
+			</span>
+			<span id="submarino2" draggable="true" ondragstart="evdragstart(event)">
 
-        </span>
-        <span id="submarino3" draggable="true" ondragstart="evdragstart(event)">
+			</span>
+			<span id="submarino3" draggable="true" ondragstart="evdragstart(event)">
 
-        </span>
-        <span id="submarino4" draggable="true" ondragstart="evdragstart(event)">
+			</span>
+			<span id="submarino4" draggable="true" ondragstart="evdragstart(event)">
 
-        </span>
-        <br><br>
-       
-        <br>
-        <span id="destructores1" draggable="true" ondragstart="evdragstart(event)">
-           
-        </span>
-        <span id="destructores2" draggable="true" ondragstart="evdragstart(event)">
+			</span>
+			<br><br>
+		
+			<br>
+			<span id="destructores1" draggable="true" ondragstart="evdragstart(event)">
+			
+			</span>
+			<span id="destructores2" draggable="true" ondragstart="evdragstart(event)">
 
-        </span>
-        <span id="destructores3" draggable="true" ondragstart="evdragstart(event)">
+			</span>
+			<span id="destructores3" draggable="true" ondragstart="evdragstart(event)">
 
-        </span>
-        <br><br>
-        
-        <br>
-        <span id="cruceros1" draggable="true" ondragstart="evdragstart(event)">
+			</span>
+			<br><br>
+			
+			<br>
+			<span id="cruceros1" draggable="true" ondragstart="evdragstart(event)">
 
-        </span>
-        <span id="cruceros2" draggable="true" ondragstart="evdragstart(event)">
+			</span>
+			<span id="cruceros2" draggable="true" ondragstart="evdragstart(event)">
 
-        </span>
-        <br><br>
-        
-        <br>
-        <span id="portaAviones1" draggable="true" ondragstart="evdragstart(event)"> 
-
-        </span>
-        <br><br>
+			</span>
+			<br><br>
+			
+			<br>
+			<span id="portaAviones1" draggable="true" ondragstart="evdragstart(event)"> 
+		
+			</span>
+			<br><br>
+			<input type="button" value="START" id="Start">
+			<br>
     </nav>
 		</div>
 		<p>
@@ -237,133 +239,633 @@
 			</tr>
 			<tr>
 				<th>A</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a10"></th>
+				<th id="a1"></th>
+				<script>
+					document.getElementById("a1").onclick = function(){
+						alert("Dio click en a1");
+					}
+				</script>
+				<th id="a2"></th>
+				<script>
+					document.getElementById("a2").onclick = function(){
+						alert("Dio click en a2");
+					}
+				</script>
+				<th id="a3"></th>
+				<script>
+					document.getElementById("a3").onclick = function(){
+						alert("Dio click en a3");
+					}
+				</script>
+				<th id="a4"></th>
+				<script>
+					document.getElementById("a4").onclick = function(){
+						alert("Dio click en a4");
+					}
+				</script>
+				<th id="a5"></th>
+				<script>
+					document.getElementById("a5").onclick = function(){
+						alert("Dio click en a5");
+					}
+				</script>
+				<th id="a6"></th>
+				<script>
+					document.getElementById("a6").onclick = function(){
+						alert("Dio click en a6");
+					}
+				</script>
+				<th id="a7"></th>
+				<script>
+					document.getElementById("a7").onclick = function(){
+						alert("Dio click en a7");
+					}
+				</script>
+				<th id="a8"></th>
+				<script>
+					document.getElementById("a8").onclick = function(){
+						alert("Dio click en a8");
+					}
+				</script>
+				<th  id="a9"></th>
+				<script>
+					document.getElementById("a9").onclick = function(){
+						alert("Dio click en a9");
+					}
+				</script>
+				<th id="a10"></th>
+				<script>
+					document.getElementById("a10").onclick = function(){
+						alert("Dio click en a10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>B</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="b10"></th>
+				<th id="b1"></th>
+				<script>
+					document.getElementById("b1").onclick = function(){
+						alert("Dio click en b1");
+					}
+				</script>
+				<th id="b2"></th>
+				<script>
+					document.getElementById("b2").onclick = function(){
+						alert("Dio click en b2");
+					}
+				</script>
+				<th id="b3"></th>
+				<script>
+					document.getElementById("b3").onclick = function(){
+						alert("Dio click en b3");
+					}
+				</script>
+				<th id="b4"></th>
+				<script>
+					document.getElementById("b4").onclick = function(){
+						alert("Dio click en b4");
+					}
+				</script>
+				<th id="b5"></th>
+				<script>
+					document.getElementById("b5").onclick = function(){
+						alert("Dio click en b5");
+					}
+				</script>
+				<th id="b6"></th>
+				<script>
+					document.getElementById("b6").onclick = function(){
+						alert("Dio click en b6");
+					}
+				</script>
+				<th id="b7"></th>
+				<script>
+					document.getElementById("b7").onclick = function(){
+						alert("Dio click en b7");
+					}
+				</script>
+				<th id="b8"></th>
+				<script>
+					document.getElementById("b8").onclick = function(){
+						alert("Dio click en b8");
+					}
+				</script>
+				<th id="b9"></th>
+				<script>
+					document.getElementById("b9").onclick = function(){
+						alert("Dio click en b9");
+					}
+				</script>
+				<th id="b10"></th>
+				<script>
+					document.getElementById("b10").onclick = function(){
+						alert("Dio click en b10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>C</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="c10"></th>
+				<th id="c1"></th>
+				<script>
+					document.getElementById("c1").onclick = function(){
+						alert("Dio click en c1");
+					}
+				</script>
+				<th id="c2"></th>
+				<script>
+					document.getElementById("c2").onclick = function(){
+						alert("Dio click en c2");
+					}
+				</script>
+				<th id="c3"></th>
+				<script>
+					document.getElementById("c3").onclick = function(){
+						alert("Dio click en c3");
+					}
+				</script>
+				<th id="c4"></th>
+				<script>
+					document.getElementById("c4").onclick = function(){
+						alert("Dio click en c4");
+					}
+				</script>
+				<th id="c5"></th>
+				<script>
+					document.getElementById("c5").onclick = function(){
+						alert("Dio click en c5");
+					}
+				</script>
+				<th id="c6"></th>
+				<script>
+					document.getElementById("c6").onclick = function(){
+						alert("Dio click en c6");
+					}
+				</script>
+				<th id="c7"></th>
+				<script>
+					document.getElementById("c7").onclick = function(){
+						alert("Dio click en c7");
+					}
+				</script>
+				<th id="c8"></th>
+				<script>
+					document.getElementById("c8").onclick = function(){
+						alert("Dio click en c8");
+					}
+				</script>
+				<th id="c9"></th>
+				<script>
+					document.getElementById("c9").onclick = function(){
+						alert("Dio click en c9");
+					}
+				</script>
+				<th id="c10"></th>
+				<script>
+					document.getElementById("c10").onclick = function(){
+						alert("Dio click en c10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>D</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="d10"></th>
+				<th id="d1"></th>
+				<script>
+					document.getElementById("d1").onclick = function(){
+						alert("Dio click en d1");
+					}
+				</script>
+				<th id="d2"></th>
+				<script>
+					document.getElementById("d2").onclick = function(){
+						alert("Dio click en d2");
+					}
+				</script>
+				<th id="d3"></th>
+				<script>
+					document.getElementById("d3").onclick = function(){
+						alert("Dio click en d3");
+					}
+				</script>
+				<th id="d4"></th>
+				<script>
+					document.getElementById("d4").onclick = function(){
+						alert("Dio click en d4");
+					}
+				</script>
+				<th id="d5"></th>
+				<script>
+					document.getElementById("d5").onclick = function(){
+						alert("Dio click en d5");
+					}
+				</script>
+				<th id="d6"></th>
+				<script>
+					document.getElementById("d6").onclick = function(){
+						alert("Dio click en d6");
+					}
+				</script>
+				<th id="d7"></th>
+				<script>
+					document.getElementById("d7").onclick = function(){
+						alert("Dio click en d7");
+					}
+				</script>
+				<th id="d8"></th>
+				<script>
+					document.getElementById("d8").onclick = function(){
+						alert("Dio click en d8");
+					}
+				</script>
+				<th id="d9"></th>
+				<script>
+					document.getElementById("d9").onclick = function(){
+						alert("Dio click en d9");
+					}
+				</script>
+				<th id="d10"></th>
+				<script>
+					document.getElementById("d10").onclick = function(){
+						alert("Dio click en d10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>E</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="e10"></th>
+				<th id="e1"></th>
+				<script>
+					document.getElementById("e1").onclick = function(){
+						alert("Dio click en e1");
+					}
+				</script>
+				<th id="e2"></th>
+				<script>
+					document.getElementById("e2").onclick = function(){
+						alert("Dio click en e2");
+					}
+				</script>
+				<th id="e3"></th>
+				<script>
+					document.getElementById("e3").onclick = function(){
+						alert("Dio click en e3");
+					}
+				</script>
+				<th id="e4"></th>
+				<script>
+					document.getElementById("e4").onclick = function(){
+						alert("Dio click en e4");
+					}
+				</script>
+				<th id="e5"></th>
+				<script>
+					document.getElementById("e5").onclick = function(){
+						alert("Dio click en e5");
+					}
+				</script>
+				<th id="e6"></th>
+				<script>
+					document.getElementById("e6").onclick = function(){
+						alert("Dio click en e6");
+					}
+				</script>
+				<th id="e7"></th>
+				<script>
+					document.getElementById("e7").onclick = function(){
+						alert("Dio click en e7");
+					}
+				</script>
+				<th id="e8"></th>
+				<script>
+					document.getElementById("e8").onclick = function(){
+						alert("Dio click en e8");
+					}
+				</script>
+				<th id="e9"></th>
+				<script>
+					document.getElementById("e9").onclick = function(){
+						alert("Dio click en e9");
+					}
+				</script>
+				<th id="e10"></th>
+				<script>
+					document.getElementById("e10").onclick = function(){
+						alert("Dio click en e10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>F</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="f10"></th>
+				<th id="f1"></th>
+				<script>
+					document.getElementById("f1").onclick = function(){
+						alert("Dio click en f1");
+					}
+				</script>
+				<th id="f2"></th>
+				<script>
+					document.getElementById("f2").onclick = function(){
+						alert("Dio click en f2");
+					}
+				</script>
+				<th id="f3"></th>
+				<script>
+					document.getElementById("f3").onclick = function(){
+						alert("Dio click en f3");
+					}
+				</script>
+				<th id="f4"></th>
+				<script>
+					document.getElementById("f4").onclick = function(){
+						alert("Dio click en f4");
+					}
+				</script>
+				<th id="f5"></th>
+				<script>
+					document.getElementById("f5").onclick = function(){
+						alert("Dio click en f5");
+					}
+				</script>
+				<th id="f6"></th>
+				<script>
+					document.getElementById("f6").onclick = function(){
+						alert("Dio click en f6");
+					}
+				</script>
+				<th id="f7"></th>
+				<script>
+					document.getElementById("f7").onclick = function(){
+						alert("Dio click en b10");
+					}
+				</script>
+				<th id="f8"></th>
+				<script>
+					document.getElementById("f8").onclick = function(){
+						alert("Dio click en f8");
+					}
+				</script>
+				<th id="f9"></th>
+				<script>
+					document.getElementById("f9").onclick = function(){
+						alert("Dio click en f9");
+					}
+				</script>
+				<th id="f10"></th>
+				<script>
+					document.getElementById("f10").onclick = function(){
+						alert("Dio click en f10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>G</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="g10"></th>
+				<th id="g1"></th>
+				<script>
+					document.getElementById("g1").onclick = function(){
+						alert("Dio click en g1");
+					}
+				</script>
+				<th id="g2"></th>
+				<script>
+					document.getElementById("g2").onclick = function(){
+						alert("Dio click en g2");
+					}
+				</script>
+				<th id="g3"></th>
+				<script>
+					document.getElementById("g3").onclick = function(){
+						alert("Dio click en g3");
+					}
+				</script>
+				<th id="g4"></th>
+				<script>
+					document.getElementById("g4").onclick = function(){
+						alert("Dio click en g4");
+					}
+				</script>
+				<th id="g5"></th>
+				<script>
+					document.getElementById("g5").onclick = function(){
+						alert("Dio click en g5");
+					}
+				</script>
+				<th id="g6"></th>
+				<script>
+					document.getElementById("g6").onclick = function(){
+						alert("Dio click en g6");
+					}
+				</script>
+				<th id="g7"></th>
+				<script>
+					document.getElementById("g7").onclick = function(){
+						alert("Dio click en g7");
+					}
+				</script>
+				<th id="g8"></th>
+				<script>
+					document.getElementById("g8").onclick = function(){
+						alert("Dio click en g8");
+					}
+				</script>
+				<th id="g9"></th>
+				<script>
+					document.getElementById("g9").onclick = function(){
+						alert("Dio click en g9");
+					}
+				</script>
+				<th id="g10"></th>
+				<script>
+					document.getElementById("g10").onclick = function(){
+						alert("Dio click en g10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>H</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="h10"></th>
+				<th id="h1"></th>
+				<script>
+					document.getElementById("h1").onclick = function(){
+						alert("Dio click en h1");
+					}
+				</script>
+				<th id="h2"></th>
+				<script>
+					document.getElementById("h2").onclick = function(){
+						alert("Dio click en h2");
+					}
+				</script>
+				<th id="h3"></th>
+				<script>
+					document.getElementById("h3").onclick = function(){
+						alert("Dio click en h3");
+					}
+				</script>
+				<th id="h4"></th>
+				<script>
+					document.getElementById("h4").onclick = function(){
+						alert("Dio click en h4");
+					}
+				</script>
+				<th id="h5"></th>
+				<script>
+					document.getElementById("h5").onclick = function(){
+						alert("Dio click en h5");
+					}
+				</script>
+				<th id="h6"></th>
+				<script>
+					document.getElementById("h6").onclick = function(){
+						alert("Dio click en h6");
+					}
+				</script>
+				<th id="h7"></th>
+				<script>
+					document.getElementById("h7").onclick = function(){
+						alert("Dio click en h7");
+					}
+				</script>
+				<th id="h8"></th>
+				<script>
+					document.getElementById("h8").onclick = function(){
+						alert("Dio click en h8");
+					}
+				</script>
+				<th id="h9"></th>
+				<script>
+					document.getElementById("h9").onclick = function(){
+						alert("Dio click en h9");
+					}
+				</script>
+				<th id="h10"></th>
+				<script>
+					document.getElementById("h10").onclick = function(){
+						alert("Dio click en h10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>I</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="i10"></th>
+				<th id="i1"></th>
+				<script>
+					document.getElementById("i1").onclick = function(){
+						alert("Dio click en i1");
+					}
+				</script>
+				<th id="i2"></th>
+				<script>
+					document.getElementById("i2").onclick = function(){
+						alert("Dio click en i2");
+					}
+				</script>
+				<th id="i3"></th>
+				<script>
+					document.getElementById("i3").onclick = function(){
+						alert("Dio click en i3");
+					}
+				</script>
+				<th id="i4"></th>
+				<script>
+					document.getElementById("i4").onclick = function(){
+						alert("Dio click en i4");
+					}
+				</script>
+				<th id="i5"></th>
+				<script>
+					document.getElementById("i5").onclick = function(){
+						alert("Dio click en i5");
+					}
+				</script>
+				<th id="i6"></th>
+				<script>
+					document.getElementById("i6").onclick = function(){
+						alert("Dio click en i6");
+					}
+				</script>
+				<th id="i7"></th>
+				<script>
+					document.getElementById("i7").onclick = function(){
+						alert("Dio click en i7");
+					}
+				</script>
+				<th id="i8"></th>
+				<script>
+					document.getElementById("i8").onclick = function(){
+						alert("Dio click en i8");
+					}
+				</script>
+				<th id="i9"></th>
+				<script>
+					document.getElementById("i9").onclick = function(){
+						alert("Dio click en i9");
+					}
+				</script>
+				<th id="i10"></th>
+				<script>
+					document.getElementById("i10").onclick = function(){
+						alert("Dio click en i10");
+					}
+				</script>
 			</tr>
 			<tr>
 				<th>J</th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j1"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j2"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j3"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j4"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j5"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j6"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j7"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j8"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j9"></th>
-				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="j10"></th>
+				<th id="j1"></th>
+				<script>
+					document.getElementById("j1").onclick = function(){
+						alert("Dio click en j1");
+					}
+				</script>
+				<th id="j2"></th>
+				<script>
+					document.getElementById("j2").onclick = function(){
+						alert("Dio click en j2");
+					}
+				</script>
+				<th id="j3"></th>
+				<script>
+					document.getElementById("j3").onclick = function(){
+						alert("Dio click en j3");
+					}
+				</script>
+				<th id="j4"></th>
+				<script>
+					document.getElementById("j4").onclick = function(){
+						alert("Dio click en j4");
+					}
+				</script>
+				<th id="j5"></th>
+				<script>
+					document.getElementById("j5").onclick = function(){
+						alert("Dio click en j5");
+					}
+				</script>
+				<th id="j6"></th>
+				<script>
+					document.getElementById("j6").onclick = function(){
+						alert("Dio click en j6");
+					}
+				</script>
+				<th id="j7"></th>
+				<script>
+					document.getElementById("j7").onclick = function(){
+						alert("Dio click en j7");
+					}
+				</script>
+				<th id="j8"></th>
+				<script>
+					document.getElementById("j8").onclick = function(){
+						alert("Dio click en j8");
+					}
+				</script>
+				<th id="j9"></th>
+				<script>
+					document.getElementById("j9").onclick = function(){
+						alert("Dio click en j9");
+					}
+				</script>
+				<th id="j10"></th>
+				<script>
+					document.getElementById("j10").onclick = function(){
+						alert("Dio click en j10");
+					}
+				</script>
 			</tr>
 		</table>
 		</section>
