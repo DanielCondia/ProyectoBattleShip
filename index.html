@@ -27,43 +27,43 @@
 			<br>
         
 			<br>
-			<span id="submarino1"  ondragstart="evdragstart(event)">
+			<span id="nave ondragstart="evdragstart(event)">
 
 			</span>
-			<span id="submarino2" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 
 			</span>
-			<span id="submarino3" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 
 			</span>
-			<span id="submarino4" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 
 			</span>
 			<br><br>
 		
 			<br>
-			<span id="destructores1" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 			
 			</span>
-			<span id="destructores2" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 
 			</span>
-			<span id="destructores3" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 
 			</span>
 			<br><br>
 			
 			<br>
-			<span id="cruceros1" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 
 			</span>
-			<span id="cruceros2" draggable="true" ondragstart="evdragstart(event)">
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
 
 			</span>
 			<br><br>
 			
 			<br>
-			<span id="portaAviones1" draggable="true" ondragstart="evdragstart(event)"> 
+			<span id="nave" draggable="true" ondragstart="evdragstart(event)"> 
 		
 			</span>
 			<br><br>
@@ -239,639 +239,1537 @@
 			</tr>
 			<tr>
 				<th>A</th>
-				<th id="a1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a1"></th>
 				<script>
 					document.getElementById("a1").onclick = function(){
-						alert("Dio click en a1");
+						//alert("Dio click en a1");
+						var celdas = document.getElementById("a1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a2"></th>
 				<script>
 					document.getElementById("a2").onclick = function(){
-						alert("Dio click en a2");
+						//alert("Dio click en a2");
+						var celdas = document.getElementById("a2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a3"></th>
 				<script>
 					document.getElementById("a3").onclick = function(){
-						alert("Dio click en a3");
+						//alert("Dio click en a3");
+						var celdas = document.getElementById("a3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a4"></th>
 				<script>
 					document.getElementById("a4").onclick = function(){
-						alert("Dio click en a4");
+						//alert("Dio click en a4");
+						var celdas = document.getElementById("a4").innerHTML;
+						if(celdas){
+						//	alert("Le dio al barco");
+							document.getElementById("a4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a5"></th>
 				<script>
 					document.getElementById("a5").onclick = function(){
-						alert("Dio click en a5");
+						//alert("Dio click en a5");
+						var celdas = document.getElementById("a5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a6"></th>
 				<script>
 					document.getElementById("a6").onclick = function(){
-						alert("Dio click en a6");
+						//alert("Dio click en a6");
+						var celdas = document.getElementById("a6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a7"></th>
 				<script>
 					document.getElementById("a7").onclick = function(){
-						alert("Dio click en a7");
+						//alert("Dio click en a7");
+						var celdas = document.getElementById("a7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a8"></th>
 				<script>
 					document.getElementById("a8").onclick = function(){
-						alert("Dio click en a8");
+						//alert("Dio click en a8");
+						var celdas = document.getElementById("a8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th  id="a9"></th>
+				<th  ondragover="evdragover(event)" ondrop="evdrop(event)"id="a9"></th>
 				<script>
 					document.getElementById("a9").onclick = function(){
-						alert("Dio click en a9");
+						//alert("Dio click en a9");
+						var celdas = document.getElementById("a9").innerHTML;
+						if(celdas){
+						//	alert("Le dio al barco");
+							document.getElementById("a9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="a10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a10"></th>
 				<script>
 					document.getElementById("a10").onclick = function(){
-						alert("Dio click en a10");
+						//alert("Dio click en a10");
+						var celdas = document.getElementById("a10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("a10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("a10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>B</th>
-				<th id="b1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b1"></th>
 				<script>
 					document.getElementById("b1").onclick = function(){
-						alert("Dio click en b1");
+						//alert("Dio click en b1");
+						var celdas = document.getElementById("b1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b2"></th>
 				<script>
 					document.getElementById("b2").onclick = function(){
-						alert("Dio click en b2");
+						//alert("Dio click en b2");
+						var celdas = document.getElementById("b2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b3"></th>
 				<script>
 					document.getElementById("b3").onclick = function(){
-						alert("Dio click en b3");
+					//	alert("Dio click en b3");
+						var celdas = document.getElementById("b3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b4"></th>
 				<script>
 					document.getElementById("b4").onclick = function(){
-						alert("Dio click en b4");
+						//alert("Dio click en b4");
+						var celdas = document.getElementById("b4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b5"></th>
 				<script>
 					document.getElementById("b5").onclick = function(){
-						alert("Dio click en b5");
+					//	alert("Dio click en b5");
+						var celdas = document.getElementById("b5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b6"></th>
 				<script>
 					document.getElementById("b6").onclick = function(){
-						alert("Dio click en b6");
+						//alert("Dio click en b6");
+						var celdas = document.getElementById("b6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b7"></th>
 				<script>
 					document.getElementById("b7").onclick = function(){
-						alert("Dio click en b7");
+						//alert("Dio click en b7");
+						var celdas = document.getElementById("b7").innerHTML;
+						if(celdas){
+						//	alert("Le dio al barco");
+							document.getElementById("b7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b8"></th>
 				<script>
 					document.getElementById("b8").onclick = function(){
-						alert("Dio click en b8");
+						//alert("Dio click en b8");
+						var celdas = document.getElementById("b8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b9"></th>
 				<script>
 					document.getElementById("b9").onclick = function(){
-						alert("Dio click en b9");
+						//alert("Dio click en b9");
+						var celdas = document.getElementById("b9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="b10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b10"></th>
 				<script>
 					document.getElementById("b10").onclick = function(){
-						alert("Dio click en b10");
+						//alert("Dio click en b10");
+						var celdas = document.getElementById("b10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("b10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("b10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>C</th>
-				<th id="c1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c1"></th>
 				<script>
 					document.getElementById("c1").onclick = function(){
-						alert("Dio click en c1");
+						//alert("Dio click en c1");
+						var celdas = document.getElementById("c1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c2"></th>
 				<script>
 					document.getElementById("c2").onclick = function(){
-						alert("Dio click en c2");
+						//alert("Dio click en c2");
+						var celdas = document.getElementById("c2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c3"></th>
 				<script>
 					document.getElementById("c3").onclick = function(){
-						alert("Dio click en c3");
+						//alert("Dio click en c3");
+						var celdas = document.getElementById("c3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c4"></th>
 				<script>
 					document.getElementById("c4").onclick = function(){
-						alert("Dio click en c4");
+						//alert("Dio click en c4");
+						var celdas = document.getElementById("c4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c5"></th>
 				<script>
 					document.getElementById("c5").onclick = function(){
-						alert("Dio click en c5");
+						//alert("Dio click en c5");
+						var celdas = document.getElementById("c5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c6"></th>
 				<script>
 					document.getElementById("c6").onclick = function(){
-						alert("Dio click en c6");
+						//alert("Dio click en c6");
+						var celdas = document.getElementById("c6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c7"></th>
 				<script>
 					document.getElementById("c7").onclick = function(){
-						alert("Dio click en c7");
+						//alert("Dio click en c7");
+						var celdas = document.getElementById("c7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c8"></th>
 				<script>
 					document.getElementById("c8").onclick = function(){
-						alert("Dio click en c8");
+						//alert("Dio click en c8");
+						var celdas = document.getElementById("c8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c9"></th>
 				<script>
 					document.getElementById("c9").onclick = function(){
-						alert("Dio click en c9");
+						//alert("Dio click en c9");
+						var celdas = document.getElementById("c9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="c10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c10"></th>
 				<script>
 					document.getElementById("c10").onclick = function(){
-						alert("Dio click en c10");
+						//alert("Dio click en c10");
+						var celdas = document.getElementById("c10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("c10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("c10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>D</th>
-				<th id="d1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d1"></th>
 				<script>
 					document.getElementById("d1").onclick = function(){
-						alert("Dio click en d1");
+						//alert("Dio click en d1");
+						var celdas = document.getElementById("d1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d2"></th>
 				<script>
 					document.getElementById("d2").onclick = function(){
-						alert("Dio click en d2");
+						//alert("Dio click en d2");
+						var celdas = document.getElementById("d2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d3"></th>
 				<script>
 					document.getElementById("d3").onclick = function(){
-						alert("Dio click en d3");
+						//alert("Dio click en d3");
+						var celdas = document.getElementById("d3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d4"></th>
 				<script>
 					document.getElementById("d4").onclick = function(){
-						alert("Dio click en d4");
+						//alert("Dio click en d4");
+						var celdas = document.getElementById("d4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d5"></th>
 				<script>
 					document.getElementById("d5").onclick = function(){
-						alert("Dio click en d5");
+						//alert("Dio click en d5");
+						var celdas = document.getElementById("d5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d6"></th>
 				<script>
 					document.getElementById("d6").onclick = function(){
-						alert("Dio click en d6");
+						//alert("Dio click en d6");
+						var celdas = document.getElementById("d6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d6").style.backgroundColor = 'red';
+						} 
+						else{
+						//	alert("Falló el tiro");
+							document.getElementById("d6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d7"></th>
 				<script>
 					document.getElementById("d7").onclick = function(){
-						alert("Dio click en d7");
+						//alert("Dio click en d7");
+						var celdas = document.getElementById("d7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d8"></th>
 				<script>
 					document.getElementById("d8").onclick = function(){
-						alert("Dio click en d8");
+						//alert("Dio click en d8");
+						var celdas = document.getElementById("d8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d9"></th>
 				<script>
 					document.getElementById("d9").onclick = function(){
-						alert("Dio click en d9");
+						//alert("Dio click en d9");
+						var celdas = document.getElementById("d9").innerHTML;
+						if(celdas){
+						//	alert("Le dio al barco");
+							document.getElementById("d9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="d10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d10"></th>
 				<script>
 					document.getElementById("d10").onclick = function(){
-						alert("Dio click en d10");
+						//alert("Dio click en d10");
+						var celdas = document.getElementById("d10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("d10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("d10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>E</th>
-				<th id="e1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e1"></th>
 				<script>
 					document.getElementById("e1").onclick = function(){
-						alert("Dio click en e1");
+						//alert("Dio click en e1");
+						var celdas = document.getElementById("e1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e2"></th>
 				<script>
 					document.getElementById("e2").onclick = function(){
-						alert("Dio click en e2");
+						//alert("Dio click en e2");
+						var celdas = document.getElementById("e2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e3"></th>
 				<script>
 					document.getElementById("e3").onclick = function(){
-						alert("Dio click en e3");
+						//alert("Dio click en e3");
+						var celdas = document.getElementById("e3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e4"></th>
 				<script>
 					document.getElementById("e4").onclick = function(){
-						alert("Dio click en e4");
+						//alert("Dio click en e4");
+						var celdas = document.getElementById("e4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e5"></th>
 				<script>
 					document.getElementById("e5").onclick = function(){
-						alert("Dio click en e5");
+						//alert("Dio click en e5");
+						var celdas = document.getElementById("e5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e6"></th>
 				<script>
 					document.getElementById("e6").onclick = function(){
-						alert("Dio click en e6");
+						//alert("Dio click en e6");
+						var celdas = document.getElementById("e6").innerHTML;
+						if(celdas){
+						//	alert("Le dio al barco");
+							document.getElementById("e6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e7"></th>
 				<script>
 					document.getElementById("e7").onclick = function(){
-						alert("Dio click en e7");
+						//alert("Dio click en e7");
+						var celdas = document.getElementById("e7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e8"></th>
 				<script>
 					document.getElementById("e8").onclick = function(){
-						alert("Dio click en e8");
+						//alert("Dio click en e8");
+						var celdas = document.getElementById("e8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e9"></th>
 				<script>
 					document.getElementById("e9").onclick = function(){
-						alert("Dio click en e9");
+						//alert("Dio click en e9");
+						var celdas = document.getElementById("e9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="e10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e10"></th>
 				<script>
 					document.getElementById("e10").onclick = function(){
-						alert("Dio click en e10");
+						//alert("Dio click en e10");
+						var celdas = document.getElementById("e10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("e10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("e10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>F</th>
-				<th id="f1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f1"></th>
 				<script>
 					document.getElementById("f1").onclick = function(){
-						alert("Dio click en f1");
+						//alert("Dio click en f1");
+						var celdas = document.getElementById("f1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f2"></th>
 				<script>
 					document.getElementById("f2").onclick = function(){
-						alert("Dio click en f2");
+						//alert("Dio click en f2");
+						var celdas = document.getElementById("f2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f3"></th>
 				<script>
 					document.getElementById("f3").onclick = function(){
-						alert("Dio click en f3");
+						//alert("Dio click en f3");
+						var celdas = document.getElementById("f3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f4"></th>
 				<script>
 					document.getElementById("f4").onclick = function(){
-						alert("Dio click en f4");
+						//alert("Dio click en f4");
+						var celdas = document.getElementById("f4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f5"></th>
 				<script>
 					document.getElementById("f5").onclick = function(){
-						alert("Dio click en f5");
+						//alert("Dio click en f5");
+						var celdas = document.getElementById("f5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f6"></th>
 				<script>
 					document.getElementById("f6").onclick = function(){
-						alert("Dio click en f6");
+						//alert("Dio click en f6");
+						var celdas = document.getElementById("f6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f7"></th>
 				<script>
 					document.getElementById("f7").onclick = function(){
-						alert("Dio click en b10");
+						//alert("Dio click en f7");
+						var celdas = document.getElementById("f7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f8"></th>
 				<script>
 					document.getElementById("f8").onclick = function(){
-						alert("Dio click en f8");
+						//alert("Dio click en f8");
+						var celdas = document.getElementById("f8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f9"></th>
 				<script>
 					document.getElementById("f9").onclick = function(){
-						alert("Dio click en f9");
+						//alert("Dio click en f9");
+						var celdas = document.getElementById("f9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("f9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="f10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f10"></th>
 				<script>
 					document.getElementById("f10").onclick = function(){
-						alert("Dio click en f10");
+					//	alert("Dio click en f10");
+						var celdas = document.getElementById("f10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("f10").style.backgroundColor = 'red';
+						} 
+						else{
+						//	alert("Falló el tiro");
+							document.getElementById("f10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>G</th>
-				<th id="g1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g1"></th>
 				<script>
 					document.getElementById("g1").onclick = function(){
-						alert("Dio click en g1");
+						//alert("Dio click en g1");
+						var celdas = document.getElementById("g1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g2"></th>
 				<script>
 					document.getElementById("g2").onclick = function(){
-						alert("Dio click en g2");
+						//alert("Dio click en g2");
+						var celdas = document.getElementById("g2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g3"></th>
 				<script>
 					document.getElementById("g3").onclick = function(){
-						alert("Dio click en g3");
+						//alert("Dio click en g3");
+						var celdas = document.getElementById("g3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g4"></th>
 				<script>
 					document.getElementById("g4").onclick = function(){
-						alert("Dio click en g4");
+						//alert("Dio click en g4");
+						var celdas = document.getElementById("g4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g5"></th>
 				<script>
 					document.getElementById("g5").onclick = function(){
-						alert("Dio click en g5");
+						//alert("Dio click en g5");
+						var celdas = document.getElementById("g5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g6"></th>
 				<script>
 					document.getElementById("g6").onclick = function(){
-						alert("Dio click en g6");
+						//alert("Dio click en g6");
+						var celdas = document.getElementById("g6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g7"></th>
 				<script>
 					document.getElementById("g7").onclick = function(){
-						alert("Dio click en g7");
+						//alert("Dio click en g7");
+						var celdas = document.getElementById("g7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g8"></th>
 				<script>
 					document.getElementById("g8").onclick = function(){
-						alert("Dio click en g8");
+						//alert("Dio click en g8");
+						var celdas = document.getElementById("g8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g9"></th>
 				<script>
 					document.getElementById("g9").onclick = function(){
-						alert("Dio click en g9");
+						//alert("Dio click en g9");
+						var celdas = document.getElementById("g9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="g10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g10"></th>
 				<script>
 					document.getElementById("g10").onclick = function(){
-						alert("Dio click en g10");
+						//alert("Dio click en g10");
+						var celdas = document.getElementById("g10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("g10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("g10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>H</th>
-				<th id="h1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h1"></th>
 				<script>
 					document.getElementById("h1").onclick = function(){
-						alert("Dio click en h1");
+						//alert("Dio click en h1");
+						var celdas = document.getElementById("h1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h2"></th>
 				<script>
 					document.getElementById("h2").onclick = function(){
-						alert("Dio click en h2");
+						//alert("Dio click en h2");
+						var celdas = document.getElementById("h2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h3"></th>
 				<script>
 					document.getElementById("h3").onclick = function(){
-						alert("Dio click en h3");
+						//alert("Dio click en h3");
+						var celdas = document.getElementById("h3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h4"></th>
 				<script>
 					document.getElementById("h4").onclick = function(){
-						alert("Dio click en h4");
+						//alert("Dio click en h4");
+						var celdas = document.getElementById("h4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h5"></th>
 				<script>
 					document.getElementById("h5").onclick = function(){
-						alert("Dio click en h5");
+						//alert("Dio click en h5");
+						var celdas = document.getElementById("h5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h6"></th>
 				<script>
 					document.getElementById("h6").onclick = function(){
-						alert("Dio click en h6");
+						//alert("Dio click en h6");
+						var celdas = document.getElementById("h6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h7"></th>
 				<script>
 					document.getElementById("h7").onclick = function(){
-						alert("Dio click en h7");
+						//alert("Dio click en h7");
+						var celdas = document.getElementById("h7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h8"></th>
 				<script>
 					document.getElementById("h8").onclick = function(){
-						alert("Dio click en h8");
+						//alert("Dio click en h8");
+						var celdas = document.getElementById("h8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h9"></th>
 				<script>
 					document.getElementById("h9").onclick = function(){
-						alert("Dio click en h9");
+						//alert("Dio click en h9");
+						var celdas = document.getElementById("h9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="h10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h10"></th>
 				<script>
 					document.getElementById("h10").onclick = function(){
-						alert("Dio click en h10");
+						//alert("Dio click en h10");
+						var celdas = document.getElementById("h10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("h10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("h10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>I</th>
-				<th id="i1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i1"></th>
 				<script>
 					document.getElementById("i1").onclick = function(){
-						alert("Dio click en i1");
+						//alert("Dio click en i1");
+						var celdas = document.getElementById("i1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i2"></th>
 				<script>
 					document.getElementById("i2").onclick = function(){
-						alert("Dio click en i2");
+						//alert("Dio click en i2");
+						var celdas = document.getElementById("i2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i3"></th>
 				<script>
 					document.getElementById("i3").onclick = function(){
-						alert("Dio click en i3");
+						//alert("Dio click en i3");
+						var celdas = document.getElementById("i3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i4"></th>
 				<script>
 					document.getElementById("i4").onclick = function(){
-						alert("Dio click en i4");
+						//alert("Dio click en i4");
+						var celdas = document.getElementById("i4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i5"></th>
 				<script>
 					document.getElementById("i5").onclick = function(){
-						alert("Dio click en i5");
+						//alert("Dio click en i5");
+						var celdas = document.getElementById("i5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i6"></th>
 				<script>
 					document.getElementById("i6").onclick = function(){
-						alert("Dio click en i6");
+						//alert("Dio click en i6");
+						var celdas = document.getElementById("i6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i7"></th>
 				<script>
 					document.getElementById("i7").onclick = function(){
-						alert("Dio click en i7");
+						//alert("Dio click en i7");
+						var celdas = document.getElementById("i7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i8"></th>
 				<script>
 					document.getElementById("i8").onclick = function(){
-						alert("Dio click en i8");
+						//alert("Dio click en i8");
+						var celdas = document.getElementById("i8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i9"></th>
 				<script>
 					document.getElementById("i9").onclick = function(){
-						alert("Dio click en i9");
+						//alert("Dio click en i9");
+						var celdas = document.getElementById("i9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="i10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i10"></th>
 				<script>
 					document.getElementById("i10").onclick = function(){
-						alert("Dio click en i10");
+						//alert("Dio click en i10");
+						var celdas = document.getElementById("i10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("i10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("i10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 			<tr>
 				<th>J</th>
-				<th id="j1"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j1"></th>
 				<script>
 					document.getElementById("j1").onclick = function(){
-						alert("Dio click en j1");
+						//alert("Dio click en j1");
+						var celdas = document.getElementById("j1").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j1").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j1").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j2"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j2"></th>
 				<script>
 					document.getElementById("j2").onclick = function(){
-						alert("Dio click en j2");
+						//alert("Dio click en j2");
+						var celdas = document.getElementById("j2").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j2").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j2").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j3"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j3"></th>
 				<script>
 					document.getElementById("j3").onclick = function(){
-						alert("Dio click en j3");
+						//alert("Dio click en j3");
+						var celdas = document.getElementById("j3").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j3").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j3").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j4"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j4"></th>
 				<script>
 					document.getElementById("j4").onclick = function(){
-						alert("Dio click en j4");
+						//alert("Dio click en j4");
+						var celdas = document.getElementById("j4").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j4").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j4").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j5"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j5"></th>
 				<script>
 					document.getElementById("j5").onclick = function(){
-						alert("Dio click en j5");
+						//alert("Dio click en j5");
+						var celdas = document.getElementById("j5").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j5").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j5").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j6"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j6"></th>
 				<script>
 					document.getElementById("j6").onclick = function(){
-						alert("Dio click en j6");
+						//alert("Dio click en j6");
+						var celdas = document.getElementById("j6").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j6").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j6").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j7"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j7"></th>
 				<script>
 					document.getElementById("j7").onclick = function(){
-						alert("Dio click en j7");
+						//alert("Dio click en j7");
+						var celdas = document.getElementById("j7").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j7").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j7").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j8"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j8"></th>
 				<script>
 					document.getElementById("j8").onclick = function(){
-						alert("Dio click en j8");
+						//alert("Dio click en j8");
+						var celdas = document.getElementById("j8").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j8").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j8").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j9"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j9"></th>
 				<script>
 					document.getElementById("j9").onclick = function(){
-						alert("Dio click en j9");
+						//alert("Dio click en j9");
+						var celdas = document.getElementById("j9").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j9").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j9").style.backgroundColor = 'white';
+						}
 					}
 				</script>
-				<th id="j10"></th>
+				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j10"></th>
 				<script>
 					document.getElementById("j10").onclick = function(){
-						alert("Dio click en j10");
+						//alert("Dio click en j10");
+						var celdas = document.getElementById("j10").innerHTML;
+						if(celdas){
+							//alert("Le dio al barco");
+							document.getElementById("j10").style.backgroundColor = 'red';
+						} 
+						else{
+							//alert("Falló el tiro");
+							document.getElementById("j10").style.backgroundColor = 'white';
+						}
 					}
 				</script>
 			</tr>
 		</table>
 		</section>
 	</div>
-
-
 </body>
 <script src="./script.js"></script>
 </html>
