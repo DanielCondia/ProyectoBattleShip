@@ -16,17 +16,16 @@ function evdrop(ev,el) {
 
 
 //Función para controlar los turnos de los jugadores 
-function turnos(verificadorBooleano){
+function turnos(verificadorBooleano, verificadorBooleanoMaquina){
     var turnos = parseInt(document.getElementById("turnos").innerHTML);
     var barcosPieMaquina = parseInt(document.getElementById("numBarcosPieEnemigo").innerHTML);
     var barcosPie = parseInt(document.getElementById("numBarcosPie").innerHTML);
     //Evaluamos cuantos barcos hay en pie
     if(barcosPie > 0 && barcosPieMaquina > 0){
         //Verificamos el turno
-        let controlTurnos = turnos % 2;
-        if(controlTurnos == 0){
+       
             empezar();
-        }
+        
         if(verificadorBooleano == true){
             barcosPieMaquina--;
             document.getElementById("numBarcosPieEnemigo").innerHTML = barcosPieMaquina;
@@ -484,21 +483,23 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
         verificadorBooleanoMaquina = true;
+        turnos(verificadorBooleanoMaquina);
+        
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa1").style.backgroundColor = 'white';
         verificadorBooleanoMaquina = false;
+        turnos(verificadorBooleanoMaquina);
         }
     }else if(Orden == 2){
         var celdas = document.getElementById("pa2").innerHTML;
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
         verificadorBooleanoMaquina = true;
+        turnos(verificadorBooleanoMaquina);
         } 
         else{
         //alert("Falló el tiro");
@@ -510,7 +511,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -523,7 +524,7 @@ function empezar(){
         if(celdas){
     //	alert("Le dio al barco");
         document.getElementById("pa4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -536,7 +537,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -549,7 +550,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -562,7 +563,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -575,7 +576,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -588,7 +589,7 @@ function empezar(){
         if(celdas){
     //	alert("Le dio al barco");
         document.getElementById("pa9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -601,7 +602,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pa10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -614,7 +615,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -627,7 +628,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -640,7 +641,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -653,7 +654,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -666,7 +667,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -679,7 +680,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -692,7 +693,7 @@ function empezar(){
         if(celdas){
     //	alert("Le dio al barco");
         document.getElementById("pb7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -705,7 +706,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -718,7 +719,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -731,7 +732,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pb10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -744,7 +745,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -757,7 +758,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -770,7 +771,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -783,7 +784,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -796,7 +797,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -809,7 +810,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -822,7 +823,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -835,7 +836,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -848,7 +849,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -861,7 +862,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pc10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -874,7 +875,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -887,7 +888,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -900,7 +901,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -913,7 +914,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -926,7 +927,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -939,7 +940,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -952,7 +953,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -965,7 +966,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -978,7 +979,7 @@ function empezar(){
         if(celdas){
         //	alert("Le dio al barco");
         document.getElementById("pd9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -991,7 +992,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pd10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1004,7 +1005,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1017,7 +1018,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1030,7 +1031,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1043,7 +1044,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1056,7 +1057,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1070,7 +1071,7 @@ function empezar(){
         if(celdas){
     //	alert("Le dio al barco");
         document.getElementById("pe6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1083,7 +1084,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1096,7 +1097,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1109,7 +1110,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1122,7 +1123,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pe10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1135,7 +1136,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1148,7 +1149,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1161,7 +1162,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1174,7 +1175,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1187,7 +1188,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1200,7 +1201,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1213,7 +1214,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1226,7 +1227,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1239,7 +1240,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1252,7 +1253,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pf10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1265,7 +1266,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1278,7 +1279,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1291,7 +1292,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1304,7 +1305,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1317,7 +1318,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1330,7 +1331,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1343,7 +1344,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1356,7 +1357,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1369,7 +1370,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1382,7 +1383,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pg10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1395,7 +1396,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1408,7 +1409,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1421,7 +1422,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1434,7 +1435,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1447,7 +1448,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
          verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1460,7 +1461,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1473,7 +1474,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1486,7 +1487,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1499,7 +1500,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1512,7 +1513,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("ph10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1525,7 +1526,7 @@ function empezar(){
         if(celdas){
         //alert("Le dio al barco");
         document.getElementById("pi1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
+        turnos(verificadorBooleanoMaquina)
         verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1538,7 +1539,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi2").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1551,7 +1552,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi3").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1564,7 +1565,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi4").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1577,7 +1578,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi5").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1590,7 +1591,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi6").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1603,7 +1604,7 @@ function empezar(){
             if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi7").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1616,7 +1617,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi8").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1629,7 +1630,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi9").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1642,7 +1643,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pi10").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1655,7 +1656,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj1").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1668,7 +1669,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj2").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1681,7 +1682,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj3").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1694,7 +1695,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj4").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1707,7 +1708,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj5").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1720,7 +1721,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj6").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1733,7 +1734,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj7").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1746,7 +1747,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj8").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1759,7 +1760,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj9").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
@@ -1772,7 +1773,7 @@ function empezar(){
         if(celdas){
             //alert("Le dio al barco");
             document.getElementById("pj10").style.backgroundColor = 'red';
-            barcosJugadorDestruidos ++;
+            turnos(verificadorBooleanoMaquina)
             verificadorBooleanoMaquina = true;
         } 
         else{
