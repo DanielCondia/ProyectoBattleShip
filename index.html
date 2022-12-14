@@ -18,16 +18,20 @@
     <div id="contenedorPadre">
 		<div id="contenedor1" ondragover="evdragover(event)" ondrop="evdrop(event)">
 			<nav id="estacionBarcos" ondragover="evdragover(event)" ondrop="evdrop(event)">
-			<p>
+			<h2>
 				<strong>
 					Seleccione el barco que desee posicionar.
 				</strong>
-			</p>
+			</h2>
 			<hr>
 			<br>
-        
+			<h2>
+				<strong>
+					ARRASTRAR LOS ELEMENTOS PARA MOVER DENTRO DE ALGUNA CASILLA
+				</strong>
+			</h2>
 			<br>
-			<span id="nave ondragstart="evdragstart(event)">
+			<span id="nave" ondragstart="evdragstart(event)">
 
 			</span>
 			<span id="nave" draggable="true" ondragstart="evdragstart(event)">
@@ -67,15 +71,28 @@
 		
 			</span>
 			<br><br>
-			<input type="button" value="START" id="Start">
+			
+			<button id="Start">
+				<strong>
+					Start
+				</strong>
+			</button>
+			<br><br>
+			<h2 id="seccionTurnos">
+				<strong>
+					<label>Turno <label id="turnos">1</label></label>
+				</strong>
+			</h2>
 			<br>
+			<h3 id="textNavesPie">
+				<label>Naves en pie:<label id="numBarcosPie">10</label></label>
+			</h3>
+			<h3 id="textNavesEnemigasPie">
+				<label>Naves enemigas en pie  <label id="numBarcosPieEnemigo">10</label></label>
+			</h3>
     </nav>
 		</div>
-		<p>
-			<strong>
-				ARRASTRAR LOS ELEMENTOS PARA MOVER DENTRO DE ALGUNA CASILLA
-			</strong>
-		</p>
+		
 		<table border="2" id="tablaContenedora">
 			<tr>
 				<th></th>
@@ -241,37 +258,45 @@
 				<th>A</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)" id="a1"></th>
 				<script>
-					document.getElementById("a1").onclick = function(){
+					document.getElementById("a1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a1");
 						var celdas = document.getElementById("a1").innerHTML;
 						if(celdas){
 							//alert("Le dio al barco");
 							document.getElementById("a1").style.backgroundColor = 'red';
+							var verificadorBooleano = true;
+							turnos(verificadorBooleano);
 						} 
 						else{
 							//alert("Falló el tiro");
 							document.getElementById("a1").style.backgroundColor = 'white';
+							var verificadorBooleano = false;
+							turnos(verificadorBooleano);
 						}
 					}
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a2"></th>
 				<script>
-					document.getElementById("a2").onclick = function(){
+					document.getElementById("a2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a2");
 						var celdas = document.getElementById("a2").innerHTML;
 						if(celdas){
 							//alert("Le dio al barco");
 							document.getElementById("a2").style.backgroundColor = 'red';
+							var verificadorBooleano = true;
+							turnos(verificadorBooleano);
 						} 
 						else{
 							//alert("Falló el tiro");
 							document.getElementById("a2").style.backgroundColor = 'white';
+							var verificadorBooleano = false;
+							turnos(verificadorBooleano);
 						}
 					}
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a3"></th>
 				<script>
-					document.getElementById("a3").onclick = function(){
+					document.getElementById("a3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a3");
 						var celdas = document.getElementById("a3").innerHTML;
 						if(celdas){
@@ -286,7 +311,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a4"></th>
 				<script>
-					document.getElementById("a4").onclick = function(){
+					document.getElementById("a4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a4");
 						var celdas = document.getElementById("a4").innerHTML;
 						if(celdas){
@@ -301,7 +326,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a5"></th>
 				<script>
-					document.getElementById("a5").onclick = function(){
+					document.getElementById("a5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a5");
 						var celdas = document.getElementById("a5").innerHTML;
 						if(celdas){
@@ -316,7 +341,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a6"></th>
 				<script>
-					document.getElementById("a6").onclick = function(){
+					document.getElementById("a6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a6");
 						var celdas = document.getElementById("a6").innerHTML;
 						if(celdas){
@@ -331,7 +356,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a7"></th>
 				<script>
-					document.getElementById("a7").onclick = function(){
+					document.getElementById("a7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a7");
 						var celdas = document.getElementById("a7").innerHTML;
 						if(celdas){
@@ -346,7 +371,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a8"></th>
 				<script>
-					document.getElementById("a8").onclick = function(){
+					document.getElementById("a8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a8");
 						var celdas = document.getElementById("a8").innerHTML;
 						if(celdas){
@@ -361,7 +386,7 @@
 				</script>
 				<th  ondragover="evdragover(event)" ondrop="evdrop(event)"id="a9"></th>
 				<script>
-					document.getElementById("a9").onclick = function(){
+					document.getElementById("a9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a9");
 						var celdas = document.getElementById("a9").innerHTML;
 						if(celdas){
@@ -376,7 +401,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="a10"></th>
 				<script>
-					document.getElementById("a10").onclick = function(){
+					document.getElementById("a10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en a10");
 						var celdas = document.getElementById("a10").innerHTML;
 						if(celdas){
@@ -394,7 +419,7 @@
 				<th>B</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b1"></th>
 				<script>
-					document.getElementById("b1").onclick = function(){
+					document.getElementById("b1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b1");
 						var celdas = document.getElementById("b1").innerHTML;
 						if(celdas){
@@ -409,7 +434,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b2"></th>
 				<script>
-					document.getElementById("b2").onclick = function(){
+					document.getElementById("b2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b2");
 						var celdas = document.getElementById("b2").innerHTML;
 						if(celdas){
@@ -424,7 +449,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b3"></th>
 				<script>
-					document.getElementById("b3").onclick = function(){
+					document.getElementById("b3").onclick = function funcionDisparoPlayer(){
 					//	alert("Dio click en b3");
 						var celdas = document.getElementById("b3").innerHTML;
 						if(celdas){
@@ -439,7 +464,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b4"></th>
 				<script>
-					document.getElementById("b4").onclick = function(){
+					document.getElementById("b4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b4");
 						var celdas = document.getElementById("b4").innerHTML;
 						if(celdas){
@@ -454,7 +479,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b5"></th>
 				<script>
-					document.getElementById("b5").onclick = function(){
+					document.getElementById("b5").onclick = function funcionDisparoPlayer(){
 					//	alert("Dio click en b5");
 						var celdas = document.getElementById("b5").innerHTML;
 						if(celdas){
@@ -469,7 +494,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b6"></th>
 				<script>
-					document.getElementById("b6").onclick = function(){
+					document.getElementById("b6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b6");
 						var celdas = document.getElementById("b6").innerHTML;
 						if(celdas){
@@ -484,7 +509,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b7"></th>
 				<script>
-					document.getElementById("b7").onclick = function(){
+					document.getElementById("b7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b7");
 						var celdas = document.getElementById("b7").innerHTML;
 						if(celdas){
@@ -499,7 +524,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b8"></th>
 				<script>
-					document.getElementById("b8").onclick = function(){
+					document.getElementById("b8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b8");
 						var celdas = document.getElementById("b8").innerHTML;
 						if(celdas){
@@ -514,7 +539,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b9"></th>
 				<script>
-					document.getElementById("b9").onclick = function(){
+					document.getElementById("b9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b9");
 						var celdas = document.getElementById("b9").innerHTML;
 						if(celdas){
@@ -529,7 +554,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="b10"></th>
 				<script>
-					document.getElementById("b10").onclick = function(){
+					document.getElementById("b10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en b10");
 						var celdas = document.getElementById("b10").innerHTML;
 						if(celdas){
@@ -547,7 +572,7 @@
 				<th>C</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c1"></th>
 				<script>
-					document.getElementById("c1").onclick = function(){
+					document.getElementById("c1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c1");
 						var celdas = document.getElementById("c1").innerHTML;
 						if(celdas){
@@ -562,7 +587,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c2"></th>
 				<script>
-					document.getElementById("c2").onclick = function(){
+					document.getElementById("c2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c2");
 						var celdas = document.getElementById("c2").innerHTML;
 						if(celdas){
@@ -577,7 +602,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c3"></th>
 				<script>
-					document.getElementById("c3").onclick = function(){
+					document.getElementById("c3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c3");
 						var celdas = document.getElementById("c3").innerHTML;
 						if(celdas){
@@ -592,7 +617,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c4"></th>
 				<script>
-					document.getElementById("c4").onclick = function(){
+					document.getElementById("c4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c4");
 						var celdas = document.getElementById("c4").innerHTML;
 						if(celdas){
@@ -607,7 +632,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c5"></th>
 				<script>
-					document.getElementById("c5").onclick = function(){
+					document.getElementById("c5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c5");
 						var celdas = document.getElementById("c5").innerHTML;
 						if(celdas){
@@ -622,7 +647,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c6"></th>
 				<script>
-					document.getElementById("c6").onclick = function(){
+					document.getElementById("c6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c6");
 						var celdas = document.getElementById("c6").innerHTML;
 						if(celdas){
@@ -637,7 +662,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c7"></th>
 				<script>
-					document.getElementById("c7").onclick = function(){
+					document.getElementById("c7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c7");
 						var celdas = document.getElementById("c7").innerHTML;
 						if(celdas){
@@ -652,7 +677,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c8"></th>
 				<script>
-					document.getElementById("c8").onclick = function(){
+					document.getElementById("c8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c8");
 						var celdas = document.getElementById("c8").innerHTML;
 						if(celdas){
@@ -667,7 +692,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c9"></th>
 				<script>
-					document.getElementById("c9").onclick = function(){
+					document.getElementById("c9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c9");
 						var celdas = document.getElementById("c9").innerHTML;
 						if(celdas){
@@ -682,7 +707,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="c10"></th>
 				<script>
-					document.getElementById("c10").onclick = function(){
+					document.getElementById("c10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en c10");
 						var celdas = document.getElementById("c10").innerHTML;
 						if(celdas){
@@ -700,7 +725,7 @@
 				<th>D</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d1"></th>
 				<script>
-					document.getElementById("d1").onclick = function(){
+					document.getElementById("d1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d1");
 						var celdas = document.getElementById("d1").innerHTML;
 						if(celdas){
@@ -715,7 +740,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d2"></th>
 				<script>
-					document.getElementById("d2").onclick = function(){
+					document.getElementById("d2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d2");
 						var celdas = document.getElementById("d2").innerHTML;
 						if(celdas){
@@ -730,7 +755,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d3"></th>
 				<script>
-					document.getElementById("d3").onclick = function(){
+					document.getElementById("d3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d3");
 						var celdas = document.getElementById("d3").innerHTML;
 						if(celdas){
@@ -745,7 +770,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d4"></th>
 				<script>
-					document.getElementById("d4").onclick = function(){
+					document.getElementById("d4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d4");
 						var celdas = document.getElementById("d4").innerHTML;
 						if(celdas){
@@ -760,7 +785,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d5"></th>
 				<script>
-					document.getElementById("d5").onclick = function(){
+					document.getElementById("d5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d5");
 						var celdas = document.getElementById("d5").innerHTML;
 						if(celdas){
@@ -775,7 +800,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d6"></th>
 				<script>
-					document.getElementById("d6").onclick = function(){
+					document.getElementById("d6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d6");
 						var celdas = document.getElementById("d6").innerHTML;
 						if(celdas){
@@ -790,7 +815,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d7"></th>
 				<script>
-					document.getElementById("d7").onclick = function(){
+					document.getElementById("d7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d7");
 						var celdas = document.getElementById("d7").innerHTML;
 						if(celdas){
@@ -805,7 +830,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d8"></th>
 				<script>
-					document.getElementById("d8").onclick = function(){
+					document.getElementById("d8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d8");
 						var celdas = document.getElementById("d8").innerHTML;
 						if(celdas){
@@ -820,7 +845,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d9"></th>
 				<script>
-					document.getElementById("d9").onclick = function(){
+					document.getElementById("d9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d9");
 						var celdas = document.getElementById("d9").innerHTML;
 						if(celdas){
@@ -835,7 +860,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="d10"></th>
 				<script>
-					document.getElementById("d10").onclick = function(){
+					document.getElementById("d10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en d10");
 						var celdas = document.getElementById("d10").innerHTML;
 						if(celdas){
@@ -853,7 +878,7 @@
 				<th>E</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e1"></th>
 				<script>
-					document.getElementById("e1").onclick = function(){
+					document.getElementById("e1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e1");
 						var celdas = document.getElementById("e1").innerHTML;
 						if(celdas){
@@ -868,7 +893,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e2"></th>
 				<script>
-					document.getElementById("e2").onclick = function(){
+					document.getElementById("e2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e2");
 						var celdas = document.getElementById("e2").innerHTML;
 						if(celdas){
@@ -883,7 +908,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e3"></th>
 				<script>
-					document.getElementById("e3").onclick = function(){
+					document.getElementById("e3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e3");
 						var celdas = document.getElementById("e3").innerHTML;
 						if(celdas){
@@ -898,7 +923,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e4"></th>
 				<script>
-					document.getElementById("e4").onclick = function(){
+					document.getElementById("e4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e4");
 						var celdas = document.getElementById("e4").innerHTML;
 						if(celdas){
@@ -913,7 +938,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e5"></th>
 				<script>
-					document.getElementById("e5").onclick = function(){
+					document.getElementById("e5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e5");
 						var celdas = document.getElementById("e5").innerHTML;
 						if(celdas){
@@ -928,7 +953,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e6"></th>
 				<script>
-					document.getElementById("e6").onclick = function(){
+					document.getElementById("e6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e6");
 						var celdas = document.getElementById("e6").innerHTML;
 						if(celdas){
@@ -943,7 +968,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e7"></th>
 				<script>
-					document.getElementById("e7").onclick = function(){
+					document.getElementById("e7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e7");
 						var celdas = document.getElementById("e7").innerHTML;
 						if(celdas){
@@ -958,7 +983,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e8"></th>
 				<script>
-					document.getElementById("e8").onclick = function(){
+					document.getElementById("e8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e8");
 						var celdas = document.getElementById("e8").innerHTML;
 						if(celdas){
@@ -973,7 +998,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e9"></th>
 				<script>
-					document.getElementById("e9").onclick = function(){
+					document.getElementById("e9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e9");
 						var celdas = document.getElementById("e9").innerHTML;
 						if(celdas){
@@ -988,7 +1013,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="e10"></th>
 				<script>
-					document.getElementById("e10").onclick = function(){
+					document.getElementById("e10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en e10");
 						var celdas = document.getElementById("e10").innerHTML;
 						if(celdas){
@@ -1006,7 +1031,7 @@
 				<th>F</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f1"></th>
 				<script>
-					document.getElementById("f1").onclick = function(){
+					document.getElementById("f1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f1");
 						var celdas = document.getElementById("f1").innerHTML;
 						if(celdas){
@@ -1021,7 +1046,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f2"></th>
 				<script>
-					document.getElementById("f2").onclick = function(){
+					document.getElementById("f2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f2");
 						var celdas = document.getElementById("f2").innerHTML;
 						if(celdas){
@@ -1036,7 +1061,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f3"></th>
 				<script>
-					document.getElementById("f3").onclick = function(){
+					document.getElementById("f3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f3");
 						var celdas = document.getElementById("f3").innerHTML;
 						if(celdas){
@@ -1051,7 +1076,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f4"></th>
 				<script>
-					document.getElementById("f4").onclick = function(){
+					document.getElementById("f4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f4");
 						var celdas = document.getElementById("f4").innerHTML;
 						if(celdas){
@@ -1066,7 +1091,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f5"></th>
 				<script>
-					document.getElementById("f5").onclick = function(){
+					document.getElementById("f5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f5");
 						var celdas = document.getElementById("f5").innerHTML;
 						if(celdas){
@@ -1081,7 +1106,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f6"></th>
 				<script>
-					document.getElementById("f6").onclick = function(){
+					document.getElementById("f6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f6");
 						var celdas = document.getElementById("f6").innerHTML;
 						if(celdas){
@@ -1096,7 +1121,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f7"></th>
 				<script>
-					document.getElementById("f7").onclick = function(){
+					document.getElementById("f7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f7");
 						var celdas = document.getElementById("f7").innerHTML;
 						if(celdas){
@@ -1111,7 +1136,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f8"></th>
 				<script>
-					document.getElementById("f8").onclick = function(){
+					document.getElementById("f8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f8");
 						var celdas = document.getElementById("f8").innerHTML;
 						if(celdas){
@@ -1126,7 +1151,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f9"></th>
 				<script>
-					document.getElementById("f9").onclick = function(){
+					document.getElementById("f9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en f9");
 						var celdas = document.getElementById("f9").innerHTML;
 						if(celdas){
@@ -1141,7 +1166,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="f10"></th>
 				<script>
-					document.getElementById("f10").onclick = function(){
+					document.getElementById("f10").onclick = function funcionDisparoPlayer(){
 					//	alert("Dio click en f10");
 						var celdas = document.getElementById("f10").innerHTML;
 						if(celdas){
@@ -1159,7 +1184,7 @@
 				<th>G</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g1"></th>
 				<script>
-					document.getElementById("g1").onclick = function(){
+					document.getElementById("g1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g1");
 						var celdas = document.getElementById("g1").innerHTML;
 						if(celdas){
@@ -1174,7 +1199,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g2"></th>
 				<script>
-					document.getElementById("g2").onclick = function(){
+					document.getElementById("g2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g2");
 						var celdas = document.getElementById("g2").innerHTML;
 						if(celdas){
@@ -1189,7 +1214,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g3"></th>
 				<script>
-					document.getElementById("g3").onclick = function(){
+					document.getElementById("g3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g3");
 						var celdas = document.getElementById("g3").innerHTML;
 						if(celdas){
@@ -1204,7 +1229,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g4"></th>
 				<script>
-					document.getElementById("g4").onclick = function(){
+					document.getElementById("g4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g4");
 						var celdas = document.getElementById("g4").innerHTML;
 						if(celdas){
@@ -1219,7 +1244,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g5"></th>
 				<script>
-					document.getElementById("g5").onclick = function(){
+					document.getElementById("g5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g5");
 						var celdas = document.getElementById("g5").innerHTML;
 						if(celdas){
@@ -1234,7 +1259,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g6"></th>
 				<script>
-					document.getElementById("g6").onclick = function(){
+					document.getElementById("g6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g6");
 						var celdas = document.getElementById("g6").innerHTML;
 						if(celdas){
@@ -1249,7 +1274,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g7"></th>
 				<script>
-					document.getElementById("g7").onclick = function(){
+					document.getElementById("g7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g7");
 						var celdas = document.getElementById("g7").innerHTML;
 						if(celdas){
@@ -1264,7 +1289,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g8"></th>
 				<script>
-					document.getElementById("g8").onclick = function(){
+					document.getElementById("g8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g8");
 						var celdas = document.getElementById("g8").innerHTML;
 						if(celdas){
@@ -1279,7 +1304,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g9"></th>
 				<script>
-					document.getElementById("g9").onclick = function(){
+					document.getElementById("g9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g9");
 						var celdas = document.getElementById("g9").innerHTML;
 						if(celdas){
@@ -1294,7 +1319,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="g10"></th>
 				<script>
-					document.getElementById("g10").onclick = function(){
+					document.getElementById("g10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en g10");
 						var celdas = document.getElementById("g10").innerHTML;
 						if(celdas){
@@ -1312,7 +1337,7 @@
 				<th>H</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h1"></th>
 				<script>
-					document.getElementById("h1").onclick = function(){
+					document.getElementById("h1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h1");
 						var celdas = document.getElementById("h1").innerHTML;
 						if(celdas){
@@ -1327,7 +1352,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h2"></th>
 				<script>
-					document.getElementById("h2").onclick = function(){
+					document.getElementById("h2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h2");
 						var celdas = document.getElementById("h2").innerHTML;
 						if(celdas){
@@ -1342,7 +1367,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h3"></th>
 				<script>
-					document.getElementById("h3").onclick = function(){
+					document.getElementById("h3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h3");
 						var celdas = document.getElementById("h3").innerHTML;
 						if(celdas){
@@ -1357,7 +1382,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h4"></th>
 				<script>
-					document.getElementById("h4").onclick = function(){
+					document.getElementById("h4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h4");
 						var celdas = document.getElementById("h4").innerHTML;
 						if(celdas){
@@ -1372,7 +1397,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h5"></th>
 				<script>
-					document.getElementById("h5").onclick = function(){
+					document.getElementById("h5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h5");
 						var celdas = document.getElementById("h5").innerHTML;
 						if(celdas){
@@ -1387,7 +1412,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h6"></th>
 				<script>
-					document.getElementById("h6").onclick = function(){
+					document.getElementById("h6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h6");
 						var celdas = document.getElementById("h6").innerHTML;
 						if(celdas){
@@ -1402,7 +1427,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h7"></th>
 				<script>
-					document.getElementById("h7").onclick = function(){
+					document.getElementById("h7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h7");
 						var celdas = document.getElementById("h7").innerHTML;
 						if(celdas){
@@ -1417,7 +1442,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h8"></th>
 				<script>
-					document.getElementById("h8").onclick = function(){
+					document.getElementById("h8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h8");
 						var celdas = document.getElementById("h8").innerHTML;
 						if(celdas){
@@ -1432,7 +1457,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h9"></th>
 				<script>
-					document.getElementById("h9").onclick = function(){
+					document.getElementById("h9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h9");
 						var celdas = document.getElementById("h9").innerHTML;
 						if(celdas){
@@ -1447,7 +1472,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="h10"></th>
 				<script>
-					document.getElementById("h10").onclick = function(){
+					document.getElementById("h10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en h10");
 						var celdas = document.getElementById("h10").innerHTML;
 						if(celdas){
@@ -1465,7 +1490,7 @@
 				<th>I</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i1"></th>
 				<script>
-					document.getElementById("i1").onclick = function(){
+					document.getElementById("i1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i1");
 						var celdas = document.getElementById("i1").innerHTML;
 						if(celdas){
@@ -1480,7 +1505,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i2"></th>
 				<script>
-					document.getElementById("i2").onclick = function(){
+					document.getElementById("i2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i2");
 						var celdas = document.getElementById("i2").innerHTML;
 						if(celdas){
@@ -1495,7 +1520,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i3"></th>
 				<script>
-					document.getElementById("i3").onclick = function(){
+					document.getElementById("i3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i3");
 						var celdas = document.getElementById("i3").innerHTML;
 						if(celdas){
@@ -1510,7 +1535,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i4"></th>
 				<script>
-					document.getElementById("i4").onclick = function(){
+					document.getElementById("i4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i4");
 						var celdas = document.getElementById("i4").innerHTML;
 						if(celdas){
@@ -1525,7 +1550,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i5"></th>
 				<script>
-					document.getElementById("i5").onclick = function(){
+					document.getElementById("i5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i5");
 						var celdas = document.getElementById("i5").innerHTML;
 						if(celdas){
@@ -1540,7 +1565,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i6"></th>
 				<script>
-					document.getElementById("i6").onclick = function(){
+					document.getElementById("i6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i6");
 						var celdas = document.getElementById("i6").innerHTML;
 						if(celdas){
@@ -1555,7 +1580,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i7"></th>
 				<script>
-					document.getElementById("i7").onclick = function(){
+					document.getElementById("i7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i7");
 						var celdas = document.getElementById("i7").innerHTML;
 						if(celdas){
@@ -1570,7 +1595,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i8"></th>
 				<script>
-					document.getElementById("i8").onclick = function(){
+					document.getElementById("i8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i8");
 						var celdas = document.getElementById("i8").innerHTML;
 						if(celdas){
@@ -1585,7 +1610,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i9"></th>
 				<script>
-					document.getElementById("i9").onclick = function(){
+					document.getElementById("i9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i9");
 						var celdas = document.getElementById("i9").innerHTML;
 						if(celdas){
@@ -1600,7 +1625,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="i10"></th>
 				<script>
-					document.getElementById("i10").onclick = function(){
+					document.getElementById("i10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en i10");
 						var celdas = document.getElementById("i10").innerHTML;
 						if(celdas){
@@ -1618,7 +1643,7 @@
 				<th>J</th>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j1"></th>
 				<script>
-					document.getElementById("j1").onclick = function(){
+					document.getElementById("j1").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j1");
 						var celdas = document.getElementById("j1").innerHTML;
 						if(celdas){
@@ -1633,7 +1658,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j2"></th>
 				<script>
-					document.getElementById("j2").onclick = function(){
+					document.getElementById("j2").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j2");
 						var celdas = document.getElementById("j2").innerHTML;
 						if(celdas){
@@ -1648,7 +1673,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j3"></th>
 				<script>
-					document.getElementById("j3").onclick = function(){
+					document.getElementById("j3").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j3");
 						var celdas = document.getElementById("j3").innerHTML;
 						if(celdas){
@@ -1663,7 +1688,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j4"></th>
 				<script>
-					document.getElementById("j4").onclick = function(){
+					document.getElementById("j4").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j4");
 						var celdas = document.getElementById("j4").innerHTML;
 						if(celdas){
@@ -1678,7 +1703,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j5"></th>
 				<script>
-					document.getElementById("j5").onclick = function(){
+					document.getElementById("j5").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j5");
 						var celdas = document.getElementById("j5").innerHTML;
 						if(celdas){
@@ -1693,7 +1718,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j6"></th>
 				<script>
-					document.getElementById("j6").onclick = function(){
+					document.getElementById("j6").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j6");
 						var celdas = document.getElementById("j6").innerHTML;
 						if(celdas){
@@ -1708,7 +1733,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j7"></th>
 				<script>
-					document.getElementById("j7").onclick = function(){
+					document.getElementById("j7").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j7");
 						var celdas = document.getElementById("j7").innerHTML;
 						if(celdas){
@@ -1723,7 +1748,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j8"></th>
 				<script>
-					document.getElementById("j8").onclick = function(){
+					document.getElementById("j8").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j8");
 						var celdas = document.getElementById("j8").innerHTML;
 						if(celdas){
@@ -1738,7 +1763,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j9"></th>
 				<script>
-					document.getElementById("j9").onclick = function(){
+					document.getElementById("j9").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j9");
 						var celdas = document.getElementById("j9").innerHTML;
 						if(celdas){
@@ -1753,7 +1778,7 @@
 				</script>
 				<th ondragover="evdragover(event)" ondrop="evdrop(event)"id="j10"></th>
 				<script>
-					document.getElementById("j10").onclick = function(){
+					document.getElementById("j10").onclick = function funcionDisparoPlayer(){
 						//alert("Dio click en j10");
 						var celdas = document.getElementById("j10").innerHTML;
 						if(celdas){
