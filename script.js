@@ -485,12 +485,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 2){
         var celdas = document.getElementById("pa2").innerHTML;
@@ -498,12 +498,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 3){
         var celdas = document.getElementById("pa3").innerHTML;
@@ -511,12 +511,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 4){
         var celdas = document.getElementById("pa4").innerHTML;
@@ -524,12 +524,12 @@ function empezar(){
     //	alert("Le dio al barco");
         document.getElementById("pa4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 5){
         var celdas = document.getElementById("pa5").innerHTML;
@@ -537,12 +537,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 6){
         var celdas = document.getElementById("pa6").innerHTML;
@@ -550,12 +550,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 7){
         var celdas = document.getElementById("pa7").innerHTML;
@@ -563,12 +563,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 8){
         var celdas = document.getElementById("pa8").innerHTML;
@@ -576,12 +576,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if(Orden == 9){
         var celdas = document.getElementById("pa9").innerHTML;
@@ -589,12 +589,12 @@ function empezar(){
     //	alert("Le dio al barco");
         document.getElementById("pa9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 10) {
         var celdas = document.getElementById("pa10").innerHTML;
@@ -602,12 +602,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pa10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pa10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 11) {
         var celdas = document.getElementById("pb1").innerHTML;
@@ -615,12 +615,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 12) {
         var celdas = document.getElementById("pb2").innerHTML;
@@ -628,12 +628,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 13) {
         var celdas = document.getElementById("pb3").innerHTML;
@@ -641,12 +641,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 14) {
         var celdas = document.getElementById("pb4").innerHTML;
@@ -654,12 +654,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 15) {
         var celdas = document.getElementById("pb5").innerHTML;
@@ -667,12 +667,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 16) {
         var celdas = document.getElementById("pb6").innerHTML;
@@ -680,12 +680,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 17) {
         var celdas = document.getElementById("pb7").innerHTML;
@@ -693,12 +693,12 @@ function empezar(){
     //	alert("Le dio al barco");
         document.getElementById("pb7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 18) {
         var celdas = document.getElementById("pb8").innerHTML;
@@ -706,12 +706,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 19) {
         var celdas = document.getElementById("pb9").innerHTML;
@@ -719,12 +719,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 20) {
         var celdas = document.getElementById("pb10").innerHTML;
@@ -732,12 +732,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pb10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pb10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 21) {
         var celdas = document.getElementById("pc1").innerHTML;
@@ -745,12 +745,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 22) {
         var celdas = document.getElementById("pc2").innerHTML;
@@ -758,12 +758,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 23) {
         var celdas = document.getElementById("pc3").innerHTML;
@@ -771,12 +771,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 24) {
         var celdas = document.getElementById("pc4").innerHTML;
@@ -784,12 +784,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 25) {
         var celdas = document.getElementById("pc5").innerHTML;
@@ -797,12 +797,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 26) {
         var celdas = document.getElementById("pc6").innerHTML;
@@ -810,12 +810,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 27) {
         var celdas = document.getElementById("pc7").innerHTML;
@@ -823,12 +823,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 28) {
         var celdas = document.getElementById("pc8").innerHTML;
@@ -836,12 +836,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 29) {
         var celdas = document.getElementById("pc9").innerHTML;
@@ -849,12 +849,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 30) {
         var celdas = document.getElementById("pc10").innerHTML;
@@ -862,12 +862,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pc10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pc10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 31) {
         var celdas = document.getElementById("pd1").innerHTML;
@@ -875,12 +875,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 32) {
         var celdas = document.getElementById("pd2").innerHTML;
@@ -888,12 +888,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 33) {
         var celdas = document.getElementById("pd3").innerHTML;
@@ -901,12 +901,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 34) {
         var celdas = document.getElementById("pd4").innerHTML;
@@ -914,12 +914,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 35) {
         var celdas = document.getElementById("pd5").innerHTML;
@@ -927,12 +927,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 36) {
         var celdas = document.getElementById("pd6").innerHTML;
@@ -940,12 +940,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //	alert("Falló el tiro");
         document.getElementById("pd6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 37) {
         var celdas = document.getElementById("pd7").innerHTML;
@@ -953,12 +953,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 38) {
         var celdas = document.getElementById("pd8").innerHTML;
@@ -966,12 +966,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 39) {
         var celdas = document.getElementById("pd9").innerHTML;
@@ -979,12 +979,12 @@ function empezar(){
         //	alert("Le dio al barco");
         document.getElementById("pd9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 40) {
         var celdas = document.getElementById("pd10").innerHTML;
@@ -992,12 +992,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pd10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pd10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 41) {
         var celdas = document.getElementById("pe1").innerHTML;
@@ -1005,12 +1005,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 42) {
         var celdas = document.getElementById("pe2").innerHTML;
@@ -1018,12 +1018,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 43) {
         var celdas = document.getElementById("pe3").innerHTML;
@@ -1031,12 +1031,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 44) {
         var celdas = document.getElementById("pe4").innerHTML;
@@ -1044,12 +1044,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 45) {
         var celdas = document.getElementById("pe5").innerHTML;
@@ -1057,12 +1057,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 46) {
 
@@ -1071,12 +1071,12 @@ function empezar(){
     //	alert("Le dio al barco");
         document.getElementById("pe6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 47) {
         var celdas = document.getElementById("pe7").innerHTML;
@@ -1084,12 +1084,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 48) {
         var celdas = document.getElementById("pe8").innerHTML;
@@ -1097,12 +1097,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 49) {
         var celdas = document.getElementById("pe9").innerHTML;
@@ -1110,12 +1110,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 50) {
         var celdas = document.getElementById("pe10").innerHTML;
@@ -1123,12 +1123,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pe10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pe10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 51) {
         var celdas = document.getElementById("pf1").innerHTML;
@@ -1136,12 +1136,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 52) {
         var celdas = document.getElementById("pf2").innerHTML;
@@ -1149,12 +1149,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 53) {
         var celdas = document.getElementById("pf3").innerHTML;
@@ -1162,12 +1162,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 54) {
         var celdas = document.getElementById("pf4").innerHTML;
@@ -1175,12 +1175,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 55) {
         var celdas = document.getElementById("pf5").innerHTML;
@@ -1188,12 +1188,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 56) {
         var celdas = document.getElementById("pf6").innerHTML;
@@ -1201,12 +1201,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 57) {
         var celdas = document.getElementById("pf7").innerHTML;
@@ -1214,12 +1214,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 58) {
         var celdas = document.getElementById("pf8").innerHTML;
@@ -1227,12 +1227,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 59) {
         var celdas = document.getElementById("pf9").innerHTML;
@@ -1240,12 +1240,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pf9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 60) {
         var celdas = document.getElementById("pf10").innerHTML;
@@ -1253,12 +1253,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pf10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
     //	alert("Falló el tiro");
         document.getElementById("pf10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 61) {
         var celdas = document.getElementById("pg1").innerHTML;
@@ -1266,12 +1266,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 62) {
         var celdas = document.getElementById("pg2").innerHTML;
@@ -1279,12 +1279,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 63) {
         var celdas = document.getElementById("pg3").innerHTML;
@@ -1292,12 +1292,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 64) {
         var celdas = document.getElementById("pg4").innerHTML;
@@ -1305,12 +1305,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 65) {
         var celdas = document.getElementById("pg5").innerHTML;
@@ -1318,12 +1318,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 66) {
         var celdas = document.getElementById("pg6").innerHTML;
@@ -1331,12 +1331,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 67) {
         var celdas = document.getElementById("pg7").innerHTML;
@@ -1344,12 +1344,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 68) {
         var celdas = document.getElementById("pg8").innerHTML;
@@ -1357,12 +1357,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 69) {
         var celdas = document.getElementById("pg9").innerHTML;
@@ -1370,12 +1370,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 70) {
         var celdas = document.getElementById("pg10").innerHTML;
@@ -1383,12 +1383,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pg10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pg10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 71) {
         var celdas = document.getElementById("ph1").innerHTML;
@@ -1396,12 +1396,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 72) {
         var celdas = document.getElementById("ph2").innerHTML;
@@ -1409,12 +1409,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph2").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph2").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 73) {
         var celdas = document.getElementById("ph3").innerHTML;
@@ -1422,12 +1422,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph3").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph3").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 74) {
         var celdas = document.getElementById("ph4").innerHTML;
@@ -1435,12 +1435,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph4").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph4").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 75) {
         var celdas = document.getElementById("ph5").innerHTML;
@@ -1448,12 +1448,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph5").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+         verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph5").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 76) {
         var celdas = document.getElementById("ph6").innerHTML;
@@ -1461,12 +1461,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph6").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph6").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 77) {
         var celdas = document.getElementById("ph7").innerHTML;
@@ -1474,12 +1474,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph7").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph7").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 78) {
         var celdas = document.getElementById("ph8").innerHTML;
@@ -1487,12 +1487,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph8").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph8").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 79) {
         var celdas = document.getElementById("ph9").innerHTML;
@@ -1500,12 +1500,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph9").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph9").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 80) {
         var celdas = document.getElementById("ph10").innerHTML;
@@ -1513,12 +1513,12 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("ph10").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("ph10").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 81) {
         var celdas = document.getElementById("pi1").innerHTML;
@@ -1526,261 +1526,260 @@ function empezar(){
         //alert("Le dio al barco");
         document.getElementById("pi1").style.backgroundColor = 'red';
         barcosJugadorDestruidos ++;
-        Turnos ++;
+        verificadorBooleanoMaquina = true;
         } 
         else{
         //alert("Falló el tiro");
         document.getElementById("pi1").style.backgroundColor = 'white';
-        Turnos ++;
+        verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 82) {
         var celdas = document.getElementById("pi2").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi2").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi2").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi2").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 83) {
         var celdas = document.getElementById("pi3").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi3").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi3").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi3").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 84) {
         var celdas = document.getElementById("pi4").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi4").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi4").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi4").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 85) {
         var celdas = document.getElementById("pi5").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi5").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi5").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi5").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 86) {
         var celdas = document.getElementById("pi6").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi6").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi6").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi6").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 87) {
         var celdas = document.getElementById("pi7").innerHTML;
-        if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            if(celdas){
+            //alert("Le dio al barco");
+            document.getElementById("pi7").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi7").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi7").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 88) {
         var celdas = document.getElementById("pi8").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi8").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi8").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi8").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 89) {
         var celdas = document.getElementById("pi9").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi9").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi9").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi9").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 90) {
         var celdas = document.getElementById("pi10").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pi10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pi10").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pi10").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pi10").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 91) {
         var celdas = document.getElementById("pj1").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj1").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj1").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj1").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj1").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 92) {
         var celdas = document.getElementById("pj2").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj2").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj2").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj2").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj2").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 93) {
         var celdas = document.getElementById("pj3").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj3").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj3").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj3").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj3").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 94) {
         var celdas = document.getElementById("pj4").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj4").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj4").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj4").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj4").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 95) {
         var celdas = document.getElementById("pj5").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj5").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj5").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj5").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj5").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 96) {
         var celdas = document.getElementById("pj6").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj6").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj6").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj6").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj6").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 97) {
         var celdas = document.getElementById("pj7").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj7").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj7").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj7").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj7").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 98) {
         var celdas = document.getElementById("pj8").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj8").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj8").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj8").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj8").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else if (Orden == 99) {
         var celdas = document.getElementById("pj9").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj9").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj9").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj9").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj9").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }else {
         var celdas = document.getElementById("pj10").innerHTML;
         if(celdas){
-        //alert("Le dio al barco");
-        document.getElementById("pj10").style.backgroundColor = 'red';
-        barcosJugadorDestruidos ++;
-        Turnos ++;
+            //alert("Le dio al barco");
+            document.getElementById("pj10").style.backgroundColor = 'red';
+            barcosJugadorDestruidos ++;
+            verificadorBooleanoMaquina = true;
         } 
         else{
-        //alert("Falló el tiro");
-        document.getElementById("pj10").style.backgroundColor = 'white';
-        Turnos ++;
+            //alert("Falló el tiro");
+            document.getElementById("pj10").style.backgroundColor = 'white';
+            verificadorBooleanoMaquina = false;
         }
     }
-
 }
 
