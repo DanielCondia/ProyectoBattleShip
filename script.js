@@ -17,31 +17,31 @@ function evdrop(ev,el) {
 
 //Función para controlar los turnos de los jugadores 
 function turnos(verificadorBooleano){
-    var turnos = parseInt(document.getElementById("turnos").innerHTML);
-    var barcosPieMaquina = parseInt(document.getElementById("numBarcosPieEnemigo").innerHTML);
-    var barcosPie = parseInt(document.getElementById("numBarcosPie").innerHTML);
-    //Evaluamos cuantos barcos hay en pie
-    if(barcosPie > 0 && barcosPieMaquina > 0){
-        verificacionBooleana();
-        empezar();
-        if(verificadorBooleano == true){
-            barcosPieMaquina--;
-            document.getElementById("numBarcosPieEnemigo").innerHTML = barcosPieMaquina;
-        }
-    }
-    if(barcosPieMaquina == 0 || barcosPieMaquina == 1){
-        document.open();
-        document.write("<h1>HA GANADO!!!</h1>");
-        document.close();
-    }
-    else if(barcosPie = 0){
-        document.open();
-        document.write("<h1>HA PERDIDO!!!</h1>");
-        document.close();
-    }
-    //Aumentamos los turnos
-    turnos++;
-    document.getElementById("turnos").innerHTML = turnos;
+  var turnos = parseInt(document.getElementById("turnos").innerHTML);
+  var barcosPieMaquina = parseInt(document.getElementById("numBarcosPieEnemigo").innerHTML);
+  var barcosPie = parseInt(document.getElementById("numBarcosPie").innerHTML);
+  //Evaluamos cuantos barcos hay en pie
+  if(barcosPie > 0 && barcosPieMaquina > 0){
+      verificacionBooleana();
+      empezar();
+      if(verificadorBooleano == true){
+          barcosPieMaquina--;
+          document.getElementById("numBarcosPieEnemigo").innerHTML = barcosPieMaquina;
+      }
+  }
+  if(barcosPieMaquina == 0 || barcosPieMaquina == 1){
+      document.open();
+      document.write("<h1>HA GANADO!!!</h1>");
+      document.close();
+  }
+  else if(barcosPie = 0){
+      document.open();
+      document.write("<h1>HA PERDIDO!!!</h1>");
+      document.close();
+  }
+  //Aumentamos los turnos
+  turnos++;
+  document.getElementById("turnos").innerHTML = turnos;
 }
 
 
@@ -51,25 +51,28 @@ document.getElementById("Start").addEventListener('click', empezar)
 document.getElementById("Organizar").addEventListener('click', organizar) 
 //Función para comenzar a ordenar los barcos de maquina automaticamente.
 function organizar() {
-  var barcosEnemigos=10
-  var GuardarR1 = []
-      for (let casillas = 1; casillas <= 100; casillas++) {
-          //alert("entro a primer ciclo for")
-          var a=casillas
-          for (let numero = 1; numero <= 100; numero++) {
-              //console.log("hola")//
-              //alert("entro a segundo ciclo for")
-              var b=numero
-                  while(barcosEnemigos>0){ 
-                  if(a==b){
-                  //console.log("hola2")//
-                  let ramdN1 = Math.round(Math.random()*99);
-                  console.log(ramdN1)
-                  console.log(GuardarR1)
-                  if(GuardarR1 != ramdN1 ){
+var barcosEnemigos=10
+var GuardarR1 = []
+    for (let casillas = 1; casillas <= 100; casillas++) {
+        //alert("entro a primer ciclo for")
+        var a=casillas
+        for (var numero = 1; numero <= 100; numero++) {
+            //console.log("hola")//
+            //alert("entro a segundo ciclo for")
+            var b=numero
+                while(barcosEnemigos>0){ 
+                if(a==b){
+                //console.log("hola2")//
+                let ramdN1 = Math.round(Math.random()*99);
+                console.log(ramdN1)
+                console.log(GuardarR1)
+                  
+                  let control = 0;
+                
+                    if(GuardarR1[control] != ramdN1 ){
                       for (let index = 0; index < 1; index++) {
                           GuardarR1.push(ramdN1)
-                      }
+                      }   
                       console.log(GuardarR1)
                       if(ramdN1==0){
                       //console.log ("entramos a ramdom")//
@@ -472,12 +475,15 @@ function organizar() {
                           barcosEnemigos--;
                           document.getElementById("j10").innerHTML = "<span></span>" 
                       }
-                  }
-                  } 
+                  
+                  control++;
+                } 
               }
           }        //alert("salio del segundo ciclo for")
       }
-      //alert("salio del primer ciclo for") 
+                  }
+                
+      alert("Barcos enemigos posicionados"); 
   }
 
 function verificacionBooleana(verificadorBooleanoMaquina){
